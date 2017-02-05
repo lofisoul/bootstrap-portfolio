@@ -1,0 +1,367 @@
+/*
+Teal color (used for headings and backgrounds): #4aaaa5
+Regular font color (used for paragraphs and all text besides the headings): #777777
+Main header background color: #ffffff
+Main header border color: #cccccc
+Footer background color: #666666
+Main content background color: #ffffff
+Main content border color: #dddddd
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background:url(../images/pw_pattern.png);
+  font-family: 'lato', serif;
+  font-size:16px;
+  font-size:1.6rem;
+  color:#777;
+}
+
+
+h1, h2, h3 {
+  font-family: 'lora', serif;
+  color:#4aaaa5;
+  border-bottom:1px solid #ccc;
+  padding-bottom:10px;
+  margin-bottom:20px;
+}
+
+h1 {
+  font-size:28px;
+  font-size:2.8rem;
+}
+
+h2 {
+  font-size:20px;
+  font-size:2rem;
+}
+
+h3 {
+  font-size:18px;
+  font-size:1.8rem;
+}
+
+p {
+  margin-bottom:20px;
+  line-height:1.6;
+}
+
+a {
+  color:#4aaaa5;
+  text-decoration: none;
+  transition:color .4s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color:#777;
+}
+
+header {
+  background:#fff;
+  box-shadow:
+  text-align: center;
+  -webkit-box-shadow: 0 10px 10px -10px rgba(0,0,0,.25);
+  box-shadow: 0 10px 10px -10px rgba(0,0,0,.25);
+}
+
+.navbar-default {
+  background:#fff;
+  border: 0;
+  padding:5px 0;
+}
+
+.navbar-default .navbar-brand {
+  /*background:#4aaaa5;*/
+  color:#fcfcfc;
+  text-shadow:0px 0px 1px rgba(0,0,0,.5);
+  text-shadow:-1px 0 rgba(0,0,0,.5), 0 1px rgba(0,0,0,.5), 1px 0 rgba(0,0,0,.5), 0 -1px rgba(0,0,0,.5);
+  font-family: ultra, serif;
+  font-size:30px;
+  font-size:3rem;
+  text-decoration:none;
+  display:block;
+  text-align:center;
+  transition: all .4s ease-in-out;
+}
+
+.navbar-default .navbar-brand:hover {
+  color:#fff;
+  text-shadow:0px 0px 1px #4aaaa5;
+  text-shadow:-1px 0 #4aaaa5, 0 1px #4aaaa5, 1px 0 #4aaaa5, 0 -1px #4aaaa5;
+
+}
+
+/*button toggle*/
+.navbar-default .navbar-toggle {
+  border-color:#4aaaa5;
+  transition: all .4s ease-in-out;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background:#4aaaa5;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color:#4aaaa5;
+  transition: all .4s ease-in-out;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar,
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color:#fff;
+}
+
+
+
+header ul > li > a {
+  color:#777;
+}
+
+header ul > li > a:hover {
+  color:#4aaaa5;
+}
+
+@media screen and (min-width:768px) {
+  header ul.navbar-nav {
+    margin-top:10px;
+  }
+
+  }
+  header ul > li {
+  border-right:1px solid #ccc;
+  padding-right:10px;
+  padding-left:10px;
+  }
+
+  header ul > li:last-child {
+    border-right:0;
+  }
+
+  .navbar-nav>li>a {
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+}
+
+.main {
+  margin:35px auto 70px;
+}
+
+.inner {
+  background:#fff;
+  border:1px solid #ccc;
+  padding:15px;
+}
+
+.content {
+  margin-bottom:30px;
+}
+
+.content img {
+  width:100%;
+  display:block;
+  max-width:300px;
+  margin:0 auto 20px;
+}
+
+.sidebar ul.row {
+  margin-left: -10px;
+  margin-right:-10px;
+}
+
+.sidebar ul.row > li {
+  width:33.33333333%;
+  float:left;
+  padding:0 10px;
+  font-size:30px;
+  text-align: center;
+  margin-bottom:20px;
+}
+
+.sidebar ul > li a {
+  color:#777;
+  transform:scale(1);
+  transition:all .25s ease-in-out;
+  display:block;
+}
+
+.sidebar ul > li a:hover {
+  transform:scale(1.1);
+}
+
+
+.sidebar ul > li a#github:hover {
+  color:#171515;
+}
+
+.sidebar ul > li a#linkedin:hover {
+  color:#0174B3;
+}
+
+.sidebar ul > li a#stackover:hover {
+  color:#F37D1B;
+}
+
+.sidebar ul > li a#twitter:hover {
+  color:#1DA1F2;
+}
+
+.sidebar ul > li a#soundcloud:hover {
+  color:#FF6A22;
+}
+
+.sidebar ul > li a#mixcloud:hover {
+  color:#020000;
+}
+
+@media screen and (min-width:768px) {
+
+  .inner {
+    padding:35px;
+  }
+
+  .content {
+    margin-bottom: 0;
+  }
+
+  .content img {
+    float:left;
+    width:30%;
+    margin-right:30px;
+    max-width:none;
+  }
+}
+
+footer {
+  background:#777;
+  text-align:center;
+  border-top:4px solid #4aaaa5;
+  padding:30px 0;
+  color:#fff;
+}
+
+/*sticky footer*/
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -80px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+	height: 80px; /* '.push' must be the same height as 'footer' */
+}
+
+.gallery-item {
+  margin-bottom: 30px;
+}
+
+.frame {
+  overflow:hidden;
+  position:relative;
+  height:200px;
+}
+
+.gallery-item img {
+  width:100%;
+  max-width:none;
+  position:absolute;
+  z-index:1;
+  transform:scale(1);
+  transition: transform .1s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform:scale(1.2);
+}
+
+.gallery-item h3 {
+  border-bottom:0;
+  margin:0;
+  text-align:center;
+  background:#4aaaa5;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:100%;
+  padding:15px 0;
+  z-index:2;
+}
+
+@media screen and (min-width:768px) {
+  .gallery-item img {
+    height:100%;
+    width:auto;
+  }
+}
+
+form label {
+  display:block;
+  margin-bottom:10px;
+}
+
+form input,
+form textarea {
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+  border:1px solid #ccc;
+}
+
+form input {
+  height:30px;
+  line-height: 30px;
+}
+
+form textarea {
+  height:200px;
+}
+
+form input[type="submit"] {
+  display:inline-block;
+  padding:10px 20px;
+  background:#4aaaa5;
+  color:#fff;
+  font-family: 'lora', serif;
+  transition:background .4s ease-in-out;
+  height:auto;
+  border:0;
+  width:auto;
+  font-size:18px;
+}
+
+form input[type="submit"]:hover {
+  background:#777;
+}
+
+/*text hover effects*/
+header ul > li > a {
+  position:relative;
+}
+
+header ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #4aaaa5;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+header ul > li > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
